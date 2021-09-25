@@ -1,0 +1,23 @@
+### Supprimer la table du model Player (ne supprime pas le mapping de la table)
+Player.__table__.drop(db.engine)
+
+### Filtrer par date APIFoot
+todayDate = datetime.datetime.now().strftime("%Y-%m-%d")
+dateFilter="?dateFrom="+todayDate+"&dateTo="+todayDate
+
+### Scheduler pour maj des scores
+from apscheduler.schedulers.background import BackgroundScheduler
+scheduler = BackgroundScheduler()
+# scheduler.add_job(func=calculate_rank, trigger="cron", hour='23', minute='58')
+scheduler.add_job(func=calculate_rank, trigger="cron", minute='46')
+scheduler.start()
+atexit.register(lambda: scheduler.shutdown())
+
+python-dateutil, freezegun,pluggy, attrs, atomicwrites, py, iniconfig, toml, pyparsing, packaging, pytest dev dependancies*
+
+ENUM des types de resultat
+
+Au démarrage de l'app avec src dans heroku :
+File "/app/src/app.py", line 5, in <module>
+2021-06-25T07:28:07.238459+00:00 app[web.1]:     from models import db
+2021-06-25T07:28:07.238460+00:00 app[web.1]: ModuleNotFoundError: No module named 'models'

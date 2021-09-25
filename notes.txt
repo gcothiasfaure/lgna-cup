@@ -1,0 +1,32 @@
+### Dates euro
+11/06 au 15/06 group 1
+16/06 au 19/06 group 2
+20/06 au 23/06 group 3
+26/06 au 29/06 1/8eme
+02/07 au 03/07 1/4
+06/07 au 07/07 1/2
+11/07          finale
+
+### Procédure remise à 0 bdd prod
+Réinitialiser données db (mapping bdd toujours bon normalement)
+bash dans VM
+python3
+from app import db,app
+with app.app_context():db.create_all()
+
+### Requêtes
+Nombre de paris effectués par joueur :
+select count(*),player.name from bet,player where player.id = bet.player_id group by player.name
+Paris pour un match :
+select bet.bet,player.name from bet,player where player.id = bet.player_id and match_id = 285418 group by bet.bet, player.name
+
+SECRET_KEY = kfdvtTnq9>Xa@!gt)HA+L#)8>j[V)FcqqG;K^tBj}C:8DjX5.zf&rsaP(>]@D`vpZN{E++d?U'Q49NpQ5:v}Tn4xh+2vG-}.:w)RemLXc:ru'd\NcC4STu:nG=4[(s/?
+
+Gaspard =
+Quentin = kenyanblanc
+Walid = allezlom
+Ged = bresil
+Florentin = paysduseum
+Jules = cheuveux
+Felix = haaland
+{"players":[{"name":"Gaspard","password":"admloc"},{"name":"Quentin","password":"kenyanblanc"},{"name":"Walid","password":"allezlom"},{"name":"Ged","password":"bresil"},{"name":"Florentin","password":"paysduseum"},{"name":"Jules","password":"cheuveux"},{"name":"Felix","password":"haaland"}]}

@@ -1,0 +1,7 @@
+{
+  "name": "lgna-cup-front",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}

@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "lgna-cup-front",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}

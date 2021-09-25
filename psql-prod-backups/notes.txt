@@ -1,0 +1,61 @@
+1 - On ajoute avec l'API les joueurs (nom + mdp)
+2 - On note les ids des joueurs créés
+3 - Dans bet.sql, on remplace les anciens ids des joueurs par les nouveaux (attention a bien choisir le joueur)
+4 - On ajoute les odds a la fin de cahque ligne
+5 - On ajoute a la bdd
+
+Vieux joueurs :
+'7206830d-c458-41b6-9b30-c740043395fd', 'Gaspard'
+'733aabcc-9cd8-4735-a2ae-b6c94af923be', 'Quentin'
+'71630088-ebd2-4e1b-b5a5-b4c4061dd40b', 'Jules'
+'ca07c262-17d1-4616-b5f4-d64e0559426e', 'Walid'
+'6dc0f330-f8d1-4280-a39d-18c5468a33b4', 'Ged'
+'214ef12c-5a6c-4861-879d-e05b3b8940fa', 'Florentin'
+'790359c8-1462-4be7-9863-9b5f923f004a', 'Felix'
+
+Nouveaux joueurs :
+'49cbda27-ae6b-443b-b25a-7beac9137b88', 'Gaspard'
+'62725253-8db1-46bf-98d4-8253b1939424', 'Quentin'
+'0ed882f6-2164-423b-a717-9eefb2f0527a', 'Walid'
+'4d19bd5d-10fa-4fc2-a72e-4e6a2f5a3506', 'Ged'
+'e0c360bf-f317-48a8-8fa6-b6b9b7c640ed', 'Florentin'
+'dd02d027-4eb7-4a68-800a-bd1639dc8c08', 'Jules'
+'07867463-70e1-4704-810b-3857f6a816ee', 'Felix'
+
+[
+    {
+        "player_id": "6dc0f330-f8d1-4280-a39d-18c5468a33b4",
+        "player_name": "Ged",
+        "player_score": 20
+    },
+    {
+        "player_id": "7206830d-c458-41b6-9b30-c740043395fd",
+        "player_name": "Gaspard",
+        "player_score": 19
+    },
+    {
+        "player_id": "790359c8-1462-4be7-9863-9b5f923f004a",
+        "player_name": "Felix",
+        "player_score": 19
+    },
+    {
+        "player_id": "ca07c262-17d1-4616-b5f4-d64e0559426e",
+        "player_name": "Walid",
+        "player_score": 18
+    },
+    {
+        "player_id": "214ef12c-5a6c-4861-879d-e05b3b8940fa",
+        "player_name": "Florentin",
+        "player_score": 11
+    },
+    {
+        "player_id": "733aabcc-9cd8-4735-a2ae-b6c94af923be",
+        "player_name": "Quentin",
+        "player_score": 11
+    },
+    {
+        "player_id": "71630088-ebd2-4e1b-b5a5-b4c4061dd40b",
+        "player_name": "Jules",
+        "player_score": 1
+    }
+]
